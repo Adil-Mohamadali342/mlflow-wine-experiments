@@ -1,1 +1,2 @@
 mlflow==3.17.2
+dagshub

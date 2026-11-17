@@ -79,7 +79,8 @@ if __name__ == "__main__":
         signature = infer_signature(train_x, predictions)
 
         ## For Remote server only(DAGShub)
-
+        import dagshub
+        dagshub.init(repo_owner='Adil-Mohamadali342', repo_name='mlflow-wine-experiments', mlflow=True)
 
 
         tracking_url_type_store = urlparse(mlflow.get_tracking_uri()).scheme
